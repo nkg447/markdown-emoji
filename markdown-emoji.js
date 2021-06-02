@@ -53,7 +53,6 @@ function createSelectElement(element) {
   div.style.width = `${element.offsetWidth - 10}px`;
 
   const select = document.createElement("div");
-  select.style.position = "absolute";
   select.style.appearance = "none";
   select.style.backgroundColor = "transparent";
   select.style.border = 0;
@@ -64,7 +63,7 @@ function createSelectElement(element) {
   select.style.overflowY = "hidden";
 
   div.appendChild(select);
-  document.getElementsByTagName("body").item(0).appendChild(div);
+  element.parentElement.insertBefore(div, element);
   return select;
 }
 

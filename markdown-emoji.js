@@ -19,8 +19,7 @@ function removeHoverClass(element) {
   });
 }
 
-function startMarkdownEmojiOnId(id) {
-  const element = document.getElementById(id);
+function startMarkdownEmojiOnElement(element) {
   if (element)
     element.oninput = (e) => {
       removeExistingElement();

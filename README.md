@@ -3,7 +3,7 @@ Markdown Emoji is a JS library to make any text input or a textbox enable the ma
 
 # How to use
 Add the followinf script to you html file.
-```js
+```html
 <script src="https://github.com/nkg447/markdown-emoji/releases/download/1.0/markdown-emoji.mini.js"></script>
 <script>
     new MarkDownEmoji(document.getElementById("input_element")).start();

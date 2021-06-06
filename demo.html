@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Emoji Markdown | Demo</title>
     <style>
       textarea {
         width: 100%;
@@ -12,10 +12,16 @@
     </style>
   </head>
   <body>
+
+    <h3>Markdown Emoji</h3>
+    <p>The below text field is enabled with markdown emoji. To use any emoji press ':' followed by the emoji name.</p>
+    <br/>
+    <p>For example try typing ":smile" in the below text box.</p>
+
     <textarea id="ta" rows="9"> </textarea>
     <script src="./markdown-emoji.js"></script>
     <script>
-      startMarkdownEmojiOnElement(document.getElementById("ta"));
+      new MarkDownEmoji(document.getElementById("ta")).start();
     </script>
   </body>
 </html>
